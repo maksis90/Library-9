@@ -1,31 +1,22 @@
- // Определяем переменную map
-        var map;
 
-        // Функция initMap которая отрисует карту на странице
-        function initMap() {
+        var map,
+            image = 'images/icon-location.png',
+            coordinates = {lat: 49.595455, lng: 34.526106};
 
-            // В переменной map создаем объект карты GoogleMaps и вешаем эту переменную на <div id="map"></div>
+        function initMap() { 
             map = new google.maps.Map(document.getElementById('map'), {
-                // При создании объекта карты необходимо указать его свойства
-                // center - определяем точку на которой карта будет центрироваться
-                center: {lat: 49.595455, lng: 34.526106},
-                // zoom - определяет масштаб. 0 - видно всю платнеу. 18 - видно дома и улицы города.
-                zoom: 18
+                center: coordinates,
+                zoom: 19
             });
-        }
-
-        // Создаем маркер на карте
+        
         var marker = new google.maps.Marker({
-
-    // Определяем позицию маркера
-        position: {lat: 49.595455, lng: 34.526106},
-
-    // Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
-        map: map,
-
-    // Укажем свою иконку для маркера    
-       icon: 'images/icon-location.png'
+        position: coordinates,
+        map: map,   
+       icon: image,
+       animation: google.maps.Animation.BOUNCE
 });
+
+}        
 
 
       
