@@ -1,0 +1,63 @@
+.contact {
+	background: $green;
+	font: 18px $font;
+	color: $white;
+	transition: all .1s;
+	
+	&__map {
+		width: 950px;
+		height: 675px;
+		margin-left: -165px;
+		
+	}
+
+	&__info {
+		text-align: right; 
+	}
+
+	&__subtitle {
+		text-transform: uppercase;
+		margin-bottom: 45px;
+	}
+
+	&__number {
+		margin-bottom: 30px;
+	}
+
+	&__day {
+		margin-bottom: 15px;
+	}
+
+	&__social {
+		line-height: 48px;
+		align-items: middle;
+		margin-bottom: 250px;
+	}
+
+	&__text {
+		font-size: 34px;
+		margin-bottom: 40px;
+	}
+
+	&__link {
+		display: inline-block;
+		width: 58px;
+		height: 58px;
+		text-decoration: none;
+		color: $white;
+		border: 2px solid $white;
+		border-radius: 50%;
+		text-align: center;
+		vertical-align: middle;
+		font-size: 34px;
+		line-height: 58px;
+		margin-left: 25px;
+	}
+
+	&__link:hover {
+		color: $green;
+		background: $white;
+	};
+
+}
+

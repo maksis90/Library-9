@@ -1,0 +1,18 @@
+.blog {
+	&__desc {
+		padding: 30px 0;
+		// vertical-align: middle;
+		
+	}
+
+	&__text {
+		margin-top: 40px;
+		font: 18px $font;	
+	}
+
+	&__link {
+		color: $green;
+		text-decoration: none;
+	}
+
+}

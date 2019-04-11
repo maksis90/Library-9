@@ -1,0 +1,93 @@
+.team {
+	
+	&__main{
+		height: 100%;
+		margin-bottom: 60px;
+	}
+
+	&__desc {
+		font: 22px $font;
+	}
+
+	&__subtitle {
+		font: 22px $font;
+		color: $green;
+		margin-bottom: 15px;
+	}
+
+	&__wrap {
+		height: 100%;
+		display: flex;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-justify-content: center;
+		        justify-content: center;
+	}
+
+	&__bg {
+		height: 616px;
+		margin-right: -165px;
+		position: relative;
+	}
+
+	&__bg::after {
+		content: '';
+		width: 0;
+		height: 0;
+		border: 0 solid transparent;
+		border-left-width: 0px;
+		border-right-width: 128px;
+		border-top: 616px solid $white;
+		@include pos($b: 0);
+			
+	}
+
+	&__img {
+		height: 100%;
+		min-width: 100%;
+	}
+
+	&__subcsribe {
+		text-align: center;
+		margin-bottom: 60px;
+	}
+	&__form {
+		width: 100%;
+		padding: 10px;
+		border: 1px solid $green;
+		margin-bottom: 60px;
+		font: 18px $font;
+		color: #877B7B;
+	
+		&:last-child{
+			margin-bottom: 20px;
+		}
+
+		&:hover {
+			border-color: $hover;
+		}
+
+		&:focus {
+		border-color: $hover;
+		}
+	}
+
+	&__label {
+		display: block;
+		text-align: right;	
+	}
+
+	&__button {
+		background: $green;
+		font: 36px $font;
+		color: $white;
+		border-radius: 12px;
+		padding: 20px 90px;
+		cursor: pointer;
+		
+		&:hover {
+			background: $green-active;
+		}
+	}
+}
