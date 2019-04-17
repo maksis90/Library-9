@@ -14,9 +14,20 @@
         map: map,   
        icon: image,
        animation: google.maps.Animation.BOUNCE
-});
+    });
+}
 
-}        
+function checkParams() {
+    var name = $('#name').val(),
+        email = $('#email').val(),
+        phone = $('#phone').val();
+
+    if(name.length >=2 && email.length >=5 && phone.length >=2) {
+        $('#submit').removeAttr('disabled');
+    } else {
+        $('#submit').attr('disabled', 'disabled');
+    }
+}
 
 
       

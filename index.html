@@ -197,19 +197,19 @@
 			<div class="col-6 offset-3">
 				<div class="team__subcsribe" id="subscribe">
 					<h2 class="team__subtitle">Записатися до бібліотеки </h2>
-					<form action="#">
+					<form action="#" method="post" id="form">
 						<fieldset>
 						<label class="team__label">ім'я</label>
-							<input type="name" name="name" class="team__form">
+							<input type="text" onkeyup="checkParams()" name="name" class="team__form" id="name" required>
 						
 						<label class="team__label">телефон</label>
-							<input type="number" name="number"class="team__form" placeholder="+38 (___) ___ __ __">
+							<input type="number" onkeyup="checkParams()" name="phone"class="team__form" id="phone" placeholder="+38 (___) ___ __ __" required>
 						
 						<label class="team__label">e-mail</label>
-							<input type="email" name="email" class="team__form">
+							<input type="email" onkeyup="checkParams()" name="email" class="team__form" id="email" required>
 						
 						</fieldset>
-						<button class="team__button">Записатся</button>
+						<button class="team__button" id="submit" disabled>Записатся</button>
 					</form>
 				</div>
 			</div>
@@ -261,6 +261,7 @@
 	</div>
 </footer>
 
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script src='main.js'></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIccMEwl_6Hmycg9DMXQ8lI--u4hOAtEs&callback=initMap"></script>
 <!-- LiveReload Script -->

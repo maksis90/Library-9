@@ -71,6 +71,13 @@
 		&:focus {
 		border-color: $hover;
 		}
+
+		&:valid {
+			background: url("../images/check.svg") no-repeat;
+			background-position: 90% 50%;
+			transition: none;
+
+		}
 	}
 
 	&__label {
@@ -86,8 +93,13 @@
 		padding: 20px 90px;
 		cursor: pointer;
 		
-		&:hover {
-			background: $green-active;
+		&:disabled {
+			background: $grey;
+			cursor: default;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
 		}
 	}
 }
