@@ -54,12 +54,12 @@
 		display: block;
 		text-decoration: none;
 		color: $white;
-		font-size: 22px;
+		font-size: 36px;
 		background: $green;
 		height: 75px;
 		width: 100%;
 		border-radius: 12px;
-		padding: 25px 0;
+		padding: 20px 0;
 	}
 
 	&__link:hover {
@@ -97,15 +97,16 @@
 		&__link::after {
 			content: '';
     		display: block;
-
+			color: #fff;
     		position: absolute;
     		bottom: 0;
     		right: 16px;
     		left: 16px;
-    		background-color: #ffffff;
+    		background-color: $green-active;
     		transition: all .3s cubic-bezier(.2, 0, 0, 1);
     		transform-origin: bottom center;
     		z-index: -1;
+    		border-radius: 10px;
 		}
 
 		&__link:hover {
